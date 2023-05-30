@@ -1,14 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   purge: false,
   theme: {
-    fontFamily: {},
+    fontFamily: {
+      primaryRegular: ["Poppins-Regular", "sans-serif"],
+      primaryItalic: ["Pacifico-Black", "sans-serif"],
+    },
     extend: {
       colors: {
-        primary: {},
-        secondary: {},
+        primary: { DEFAULT: "#4275FA" },
+        secondary: { DEFAULT: "#2E2D56" },
+        light: { DEFAULT: "#929292" },
       },
     },
   },
