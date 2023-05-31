@@ -24,9 +24,9 @@ export const WelcomeSection: FC = () => {
         <h1 className="text-white font-medium text-xl md:text-2xl">
           HELLO, I'M JAVIER GAMBOA
         </h1>
-        <h2 className="text-white font-bold text-3xl md:text-4xl">
+        <h3 className="text-white font-bold text-3xl md:text-4xl">
           FRONTEND DEVELOPER
-        </h2>
+        </h3>
         <hr className="w-28 h-1 bg-white mb-4" />
         <div className="flex gap-4">
           <Button color="primary">Hire me</Button>

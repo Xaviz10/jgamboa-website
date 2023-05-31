@@ -1,16 +1,52 @@
 import { FC } from "react";
 import { StyledDefaultHeader, StyledNavBar } from "./Header.styles";
 import { JGamboaLogo } from "../../assets/Svg";
+import { useHeader } from "./useHeader";
 
 export const Header: FC = () => {
+  const { viewHightPercentage } = useHeader();
   return (
-    <StyledDefaultHeader>
-      <JGamboaLogo />
+    <StyledDefaultHeader
+      className={`${
+        viewHightPercentage > 0.25 ? "bg-white drop-shadow" : "bg-transparent"
+      }`}
+    >
+      <JGamboaLogo
+        color={`${viewHightPercentage > 0.25 ? "#4275FA" : "#FFFFFF"}`}
+      />
       <StyledNavBar>
-        <a href="#about">About</a>
-        <a href="#what-i-do">What I do</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
+        <a
+          className={`${
+            viewHightPercentage > 0.25 ? "text-primary" : "text-white"
+          }`}
+          href="#about"
+        >
+          About
+        </a>
+        <a
+          className={`${
+            viewHightPercentage > 0.25 ? "text-primary" : "text-white"
+          }`}
+          href="#what-i-do"
+        >
+          What I do
+        </a>
+        <a
+          className={`${
+            viewHightPercentage > 0.25 ? "text-primary" : "text-white"
+          }`}
+          href="#work"
+        >
+          Work
+        </a>
+        <a
+          className={`${
+            viewHightPercentage > 0.25 ? "text-primary" : "text-white"
+          }`}
+          href="#contact"
+        >
+          Contact
+        </a>
       </StyledNavBar>
     </StyledDefaultHeader>
   );

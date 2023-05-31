@@ -48,30 +48,6 @@ code {
     "Courier New", monospace;
 }
 
-@keyframes floating {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-20px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-
-@keyframes floatingFigures {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-15px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
@@ -86,11 +62,11 @@ code {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #c1101a;
+  background: #4275fa;
   border-radius: 2px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #e30613;
+  background: #4275fa;
 }
