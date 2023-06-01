@@ -5,7 +5,7 @@ import svgr from "vite-plugin-svgr";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/jgamboa-website/",
+  base: "/",
   define: {
     "process.env": process.env,
   },
