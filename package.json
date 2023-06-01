@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://xaviz10.github.io/jgamboa-website/",
+  "homepage": "https://xaviz10.github.io/jgamboa-website",
   "scripts": {
     "dev": "vite --host",
     "predeploy": "npm run build",
