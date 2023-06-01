@@ -32,7 +32,7 @@ const handleRequestError = (error: any) => {
 function App() {
   return (
     <Provider store={Store.store}>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.VITE_APP_PATH_BASE}>
         <Routing />
       </BrowserRouter>
       <Toaster />
