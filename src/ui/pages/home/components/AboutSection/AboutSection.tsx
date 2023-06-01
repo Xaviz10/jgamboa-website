@@ -10,7 +10,7 @@ import skills from "../../../../assets/images/skills.svg";
 
 export const AboutSection: FC = () => {
   return (
-    <StyledAboutSection>
+    <StyledAboutSection id="about">
       <StyledImagesContainer>
         <img src={skills} />
         <img src={aboutAvatar} />
@@ -23,10 +23,11 @@ export const AboutSection: FC = () => {
           Frontend Developer
         </h3>
         <p className="text-tertiary font-normal text-base md:text-lg">
-          My name is Muhamad Raul Iqbal,tortor posuere ac ut consequat semper
-          viverra nam libero justo laoreet sit amet cursus. My name is Muhamad
-          Raul Iqbal,tortor posuere ac ut consequat semper viverra nam libero
-          justo laoreet sit amet cursus
+          My name is Javier Gamboa, I'm a Mechatronic engineer passionate in
+          frontend development. My journey in frontend development started in
+          Portugal when I was finishing my final project of my MS in Industrial
+          Automation, and from there I tried to improve my knowledge in this
+          field.
         </p>
         <h3 className="pt-4 text-secondary font-semibold text-xl md:text-2xl">
           My hobbies

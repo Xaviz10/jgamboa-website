@@ -14,7 +14,7 @@ export const StyledWelcomeSection = styled.section.attrs({
 export const StyledWelcomeArticle = styled.article.attrs({
   className: "StyledHomeAvatarContainer",
 })`
-  ${tw`px-8 flex flex-col justify-center gap-3 z-[2] text-center items-center md:(text-left items-start)`}
+  ${tw`mx-auto px-8 flex flex-col justify-center gap-3 z-[2] text-center items-center md:(text-left items-start)`}
 `;
 
 export const StyledHomeAvatarContainer = styled.div.attrs({
