@@ -42,7 +42,7 @@ export const Button = styledMUI(ButtonMUI)<ButtonCustomProps>(({ color }) => {
     boxShadow: shadow,
     fontFamily: "Poppins-Regular",
     color: colorFont,
-    fontWeight: "500",
+    fontWeight: "600",
     fontSize: "18px",
     lineHeight: "24px",
 

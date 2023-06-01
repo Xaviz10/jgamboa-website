@@ -5,10 +5,6 @@ interface StyledInputProps {
   error?: boolean;
 }
 
-interface StyledLabelProps {
-  textLabelColor?: string;
-}
-
 export const StyledInput = styled.input.attrs({
   className: "StyledInput",
 })<StyledInputProps>`
@@ -20,17 +16,13 @@ export const StyledInput = styled.input.attrs({
       items-start
       justify-center
       py-3
-      px-4
-      rounded-lg
-      border-[1px]
-      bg-white
+      px-2
+      border-b-2
       border-gray-300
       outline-none
 
 
-      text-base
-      font-normal
-      leading-6
+      text-lg
       text-black
       placeholder-gray-500
       
@@ -40,36 +32,10 @@ export const StyledInput = styled.input.attrs({
   ${({ error }) => error && tw``}
 `;
 
-export const StyledIconContainer = styled.div.attrs({
-  className: "StyledIconContainer",
-})`
-  ${tw`
-      absolute
-      pr-4
-      h-[3.125rem]
-      min-w-[3.125rem]
-      top-0
-      right-0
-      flex
-      items-center
-      justify-end
-      gap-x-3
-    `}
-
-  ${({ onClick }) => !!onClick && tw`cursor-pointer`}
-`;
-
 export const StyledLabel = styled.label.attrs({
   className: "StyledLabel",
-})<StyledLabelProps>`
-  ${tw`
-      text-base
-      font-normal
-      leading-6
-      text-white
-    `}
-  ${({ textLabelColor }) =>
-    textLabelColor && `color:${textLabelColor} !important`}
+})`
+  ${tw`text-2xl font-medium `}
 `;
 
 export const StyledHelperText = styled.p.attrs({

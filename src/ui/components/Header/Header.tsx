@@ -11,9 +11,12 @@ export const Header: FC = () => {
         viewHightPercentage > 0.25 ? "bg-white drop-shadow" : "bg-transparent"
       }`}
     >
-      <JGamboaLogo
-        color={`${viewHightPercentage > 0.25 ? "#4275FA" : "#FFFFFF"}`}
-      />
+      <a href="#">
+        <JGamboaLogo
+          className="cursor-pointer"
+          color={`${viewHightPercentage > 0.25 ? "#4275FA" : "#FFFFFF"}`}
+        />
+      </a>
       <StyledNavBar>
         <a
           className={`${
