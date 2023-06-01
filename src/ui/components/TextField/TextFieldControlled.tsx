@@ -21,7 +21,6 @@ export const TextFieldControlled: FC<TextFieldControlledProps> = ({
   onClickIcon,
   defaultValue = "",
   control,
-  textLabelColor,
   ...rest
 }) => {
   const {
@@ -34,7 +33,7 @@ export const TextFieldControlled: FC<TextFieldControlledProps> = ({
     },
     defaultValue: defaultValue,
   });
-  
+
   return (
     <TextField
       onChange={onChange}
@@ -49,7 +48,6 @@ export const TextFieldControlled: FC<TextFieldControlledProps> = ({
       iconSrc={iconSrc}
       placeholder={placeholder}
       onClickIcon={onClickIcon}
-      textLabelColor={textLabelColor}
       {...rest}
     />
   );
