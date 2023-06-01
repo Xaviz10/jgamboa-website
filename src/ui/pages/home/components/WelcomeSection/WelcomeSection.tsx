@@ -17,7 +17,7 @@ import homeEllipse from "../../../../assets/images/homeEllipse.svg";
 
 export const WelcomeSection: FC = () => {
   return (
-    <StyledWelcomeSection>
+    <StyledWelcomeSection id="/">
       <BigEllipseWatermark className="absolute top-0 left-0 " />
       <SmallEllipseWatermark className="absolute bottom-0 right-0" />
       <StyledWelcomeArticle>

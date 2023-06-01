@@ -2,7 +2,6 @@ import { TextareaHTMLAttributes, forwardRef } from "react";
 import { FieldError, FieldErrorsImpl, Merge } from "react-hook-form";
 import {
   StyledHelperText,
-  StyledIconContainer,
   StyledLabel,
   StyledTextArea,
 } from "./TextArea.styles";
@@ -46,7 +45,7 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
         className={`relative flex flex-col w-full gap-y-1 items-start text-left ${className}`}
       >
         {!!label && (
-          <StyledLabel textLabelColor={textLabelColor} htmlFor={id}>
+          <StyledLabel htmlFor={id}>
             {label} {!!required && <span className="text-primary-100"> *</span>}
           </StyledLabel>
         )}
@@ -59,21 +58,6 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
             ref={ref}
             {...rest}
           />
-          {!!(iconSrc || error) && (
-            <StyledIconContainer onClick={onClickIcon}>
-              {!!iconSrc && !error ? (
-                <img
-                  width="20px"
-                  height="20px"
-                  src={iconSrc}
-                  alt="Input icon"
-                  title="Input icon"
-                />
-              ) : (
-                <></>
-              )}
-            </StyledIconContainer>
-          )}
         </div>
         {!!error && !!helperText && (
           <StyledHelperText>{helperText as string}</StyledHelperText>

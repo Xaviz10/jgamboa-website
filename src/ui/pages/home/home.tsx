@@ -3,6 +3,7 @@ import { DefaultLayout } from "../../layouts";
 
 import {
   AboutSection,
+  ContactSection,
   SpecializationSection,
   WelcomeSection,
 } from "./components";
@@ -13,6 +14,7 @@ export const Home: FC = () => {
       <WelcomeSection />
       <AboutSection />
       <SpecializationSection />
+      <ContactSection />
     </DefaultLayout>
   );
 };
