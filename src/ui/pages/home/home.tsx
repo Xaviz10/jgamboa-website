@@ -7,11 +7,16 @@ import {
   SpecializationSection,
   WelcomeSection,
 } from "./components";
+import { useHomeViewModel } from "../../viewModels";
 
 export const Home: FC = () => {
+  const { handleDownloadCV, handleNavigateToSection } = useHomeViewModel();
   return (
     <DefaultLayout>
-      <WelcomeSection />
+      <WelcomeSection
+        handleNavigateToSection={handleNavigateToSection}
+        onGetCV={handleDownloadCV}
+      />
       <AboutSection />
       <SpecializationSection />
       <ContactSection />
