@@ -9,7 +9,7 @@ interface ImageContainerProps {
 export const StyledArticleCard = styled.article.attrs({
   className: "StyledArticleCard",
 })`
-  ${tw`relative p-8 pt-[72px] border border-gray-600 rounded-tr-[48px] max-w-[420px] h-60 mt-20`}
+  ${tw`relative p-8 pt-[72px] border border-gray-600 rounded-tr-[48px] max-w-[420px] md:h-60 mt-20`}
 `;
 
 export const StyledImageContainer = styled.div.attrs({

@@ -15,19 +15,20 @@ export const AboutSection: FC = () => {
         <img src={skills} />
         <img src={aboutAvatar} />
       </StyledImagesContainer>
-      <article className="w-full mx-auto flex flex-col gap-2 justify-center max-w-xs">
+      <article className="w-full mx-auto flex flex-col gap-2 justify-center items-center md:items-start max-w-lg">
         <h2 className="text-primary font-medium text-xl md:text-2xl">
           ABOUT ME
         </h2>
         <h3 className="text-secondary font-semibold text-2xl md:text-3xl">
           Frontend Developer
         </h3>
-        <p className="text-tertiary font-normal text-base md:text-lg">
-          My name is Javier Gamboa, I'm a Mechatronic engineer passionate in
-          frontend development. My journey in frontend development started in
-          Portugal when I was finishing my final project of my MS in Industrial
-          Automation, and from there I tried to improve my knowledge in this
-          field.
+        <p className="text-tertiary font-normal text-base md:text-lg text-justify">
+          I am a proactive Frontend Developer with a background in Mechatronics
+          Engineering and a Master's degree in Industrial Automation
+          Engineering. Over the past 3 years, I have acquired skills in web
+          development, with a strong focus on React. I am passionate about
+          creating efficient and intuitive user interfaces and constantly
+          seeking new challenges to grow both professionally and personally.
         </p>
         <h3 className="pt-4 text-secondary font-semibold text-xl md:text-2xl">
           My hobbies

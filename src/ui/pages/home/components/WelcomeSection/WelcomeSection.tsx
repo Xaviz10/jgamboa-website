@@ -15,7 +15,15 @@ import homeLeftPolygon from "../../../../assets/images/homeLeftPolygon.svg";
 import homeRightPolygon from "../../../../assets/images/homeRightPolygon.svg";
 import homeEllipse from "../../../../assets/images/homeEllipse.svg";
 
-export const WelcomeSection: FC = () => {
+interface WelcomeSectionProps {
+  onGetCV: () => void;
+  handleNavigateToSection: (sectionUrl: string) => void;
+}
+
+export const WelcomeSection: FC<WelcomeSectionProps> = ({
+  onGetCV,
+  handleNavigateToSection,
+}) => {
   return (
     <StyledWelcomeSection id="/">
       <BigEllipseWatermark className="absolute top-0 left-0 " />
@@ -29,8 +37,13 @@ export const WelcomeSection: FC = () => {
         </h3>
         <hr className="w-28 h-1 bg-white mb-4" />
         <div className="flex gap-4">
-          <Button color="primary">Hire me</Button>
-          <Button>Get CV</Button>
+          <Button
+            color="primary"
+            onClick={() => handleNavigateToSection("#contact")}
+          >
+            Hire me
+          </Button>
+          <Button onClick={onGetCV}>Get CV</Button>
         </div>
       </StyledWelcomeArticle>
       <StyledHomeAvatarContainer>
