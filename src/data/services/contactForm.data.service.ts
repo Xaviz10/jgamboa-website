@@ -1,13 +1,9 @@
-import { ExampleModel } from "../models";
 import {
   ContactFormRepository,
   contactFormInput,
 } from "../../domain/repositories";
 import { httpService } from "../http/services/http";
 import { Endpoints } from "./endpoints";
-export interface CatalogueResponse {
-  data: ExampleModel;
-}
 
 export function contactFormDataService(): ContactFormRepository {
   const { post } = httpService();
