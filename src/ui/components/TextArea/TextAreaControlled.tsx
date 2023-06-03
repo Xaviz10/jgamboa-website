@@ -3,7 +3,7 @@ import { Control, FieldValues, useController } from "react-hook-form";
 import { TextArea, TextAreaProps } from "./TextArea";
 
 interface TextAreaControlledProps extends TextAreaProps {
-  control?: Control<FieldValues, any>;
+  control: Control<FieldValues, any>;
   id: string;
   name: string;
   defaultValue?: string;

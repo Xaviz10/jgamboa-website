@@ -12,9 +12,31 @@ import {
   SmallEllipseWatermarkContact,
   UserIcon,
 } from "../../../../assets/Svg";
-import { Button, TextArea, TextField } from "../../../../components";
+import {
+  Button,
+  TextAreaControlled,
+  TextFieldControlled,
+} from "../../../../components";
+import {
+  Control,
+  FieldErrors,
+  FieldValues,
+  UseFormHandleSubmit,
+} from "react-hook-form";
 
-export const ContactSection: FC = () => {
+interface ContactSectionProps {
+  handleContactForm: () => {
+    onSubmit: (data: FieldValues) => void;
+    handleSubmit: UseFormHandleSubmit<FieldValues>;
+    control: Control<FieldValues, any>;
+    errors: FieldErrors<FieldValues>;
+  };
+}
+
+export const ContactSection: FC<ContactSectionProps> = ({
+  handleContactForm,
+}) => {
+  const { onSubmit, handleSubmit, control, errors } = handleContactForm();
   return (
     <StyledContactSection id="contact">
       <h2 className="font-medium text-xl md:text-2xl text-center text-primary">
@@ -70,25 +92,37 @@ export const ContactSection: FC = () => {
           <SmallEllipseWatermarkContact className="absolute right-1/4 top-1/3" />
         </StyledContactInformation>
         <StyledContactForm>
-          <TextField
+          <TextFieldControlled
             id="name"
             name="name"
             label="Name"
             placeholder="Your name"
+            control={control}
+            error={!!errors.name}
+            helperText={errors.name?.message}
           />
-          <TextField
+          <TextFieldControlled
             id="email"
             name="email"
             label="Email"
             placeholder="Your email"
+            control={control}
+            error={!!errors.email}
+            helperText={errors.email?.message}
           />
-          <TextArea
+          <TextAreaControlled
             id="message"
             name="message"
             label="Message"
             placeholder="Your message"
+            maxLength={160}
+            control={control}
+            error={!!errors.message}
+            helperText={errors.message?.message}
           />
-          <Button color="secondary">Send Message</Button>
+          <Button color="secondary" onClick={handleSubmit(onSubmit)}>
+            Send Message
+          </Button>
         </StyledContactForm>
       </div>
     </StyledContactSection>

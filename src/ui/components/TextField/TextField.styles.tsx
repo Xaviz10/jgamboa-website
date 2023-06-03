@@ -27,9 +27,10 @@ export const StyledInput = styled.input.attrs({
       placeholder-gray-500
       
       disabled:(bg-gray-400 border-gray-400 text-gray-600 placeholder-gray-600)
+      
   `}
 
-  ${({ error }) => error && tw``}
+  ${({ error }) => error && tw`border-red-600`}
 `;
 
 export const StyledLabel = styled.label.attrs({
@@ -43,7 +44,7 @@ export const StyledHelperText = styled.p.attrs({
 })`
   ${tw`
     text-base
-    leading-6
+    text-red-600
     `}
   word-break: break-word;
 `;

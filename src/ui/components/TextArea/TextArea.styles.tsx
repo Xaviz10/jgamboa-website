@@ -32,7 +32,7 @@ export const StyledTextArea = styled.textarea.attrs({
     ${tw`bottom-0`}
   }
 
-  ${({ error }) => error && tw``}
+  ${({ error }) => error && tw`border-red-600`}
 `;
 
 export const StyledLabel = styled.label.attrs({
@@ -46,6 +46,7 @@ export const StyledHelperText = styled.p.attrs({
 })`
   ${tw`
       text-base
+      text-red-600
       `}
   word-break: break-word;
 `;
