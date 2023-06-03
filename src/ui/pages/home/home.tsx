@@ -10,7 +10,8 @@ import {
 import { useHomeViewModel } from "../../viewModels";
 
 export const Home: FC = () => {
-  const { handleDownloadCV, handleNavigateToSection } = useHomeViewModel();
+  const { handleDownloadCV, handleNavigateToSection, handleContactForm } =
+    useHomeViewModel();
   return (
     <DefaultLayout>
       <WelcomeSection
@@ -19,7 +20,7 @@ export const Home: FC = () => {
       />
       <AboutSection />
       <SpecializationSection />
-      <ContactSection />
+      <ContactSection handleContactForm={handleContactForm} />
     </DefaultLayout>
   );
 };

@@ -34,14 +34,14 @@ export const Header: FC = () => {
         >
           What I do
         </a>
-        <a
+        {/* <a
           className={`${
             viewHightPercentage > 0.25 ? "text-primary" : "text-white"
           }`}
           href="#work"
         >
           Work
-        </a>
+        </a> */}
         <a
           className={`${
             viewHightPercentage > 0.25 ? "text-primary" : "text-white"

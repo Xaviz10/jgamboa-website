@@ -1,4 +1,4 @@
 export enum Endpoints {
   // Auth endpoints
-  example = "example",
+  send = "send",
 }
