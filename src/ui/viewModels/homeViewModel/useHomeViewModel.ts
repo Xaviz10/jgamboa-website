@@ -5,8 +5,10 @@ import { contactFormSchema } from "../../validators";
 import { useCaseContactForm } from "../../../domain/useCases";
 import { contactFormDataService } from "../../../data/services";
 import { toast } from "react-hot-toast";
+import { useTranslation } from "react-i18next";
 
 export function useHomeViewModel() {
+  const [t] = useTranslation("home");
   const { sendEmail } = useCaseContactForm(contactFormDataService());
 
   function handleDownloadCV() {
@@ -61,5 +63,5 @@ export function useHomeViewModel() {
     };
   }
 
-  return { handleDownloadCV, handleNavigateToSection, handleContactForm };
+  return { t, handleDownloadCV, handleNavigateToSection, handleContactForm };
 }

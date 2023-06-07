@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export function useHeader() {
+  const [t] = useTranslation("header");
+
   const [scrollOffset, setScrollOffset] = useState(0);
   const [screenHeight, setScreenHeight] = useState(window.innerHeight);
   const [viewHightPercentage, setViewHightPercentage] = useState(0);
@@ -33,5 +36,5 @@ export function useHeader() {
   useEffect(() => {
     screenHeight && setViewHightPercentage(scrollOffset / screenHeight);
   }, [screenHeight, scrollOffset]);
-  return { viewHightPercentage };
+  return { viewHightPercentage, t };
 }

@@ -25,7 +25,7 @@ let store = configureStore({
   reducer: persistReduce,
   middleware: middleware,
   preloadedState: initialState,
-  devTools: import.meta.env.NODE_ENV === "development",
+  devTools: true,
 });
 let persistor = persistStore(store);
 

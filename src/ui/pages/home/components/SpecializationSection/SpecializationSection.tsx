@@ -8,56 +8,63 @@ import reactLogo from "../../../../assets/images/reactLogo.svg";
 import muiLogo from "../../../../assets/images/muiLogo.svg";
 import tailwindLogo from "../../../../assets/images/tailwindLogo.svg";
 import reactNativeLogo from "../../../../assets/images/reactNativeLogo.svg";
+import { TFunction } from "i18next";
 
-export const SpecializationSection: FC = () => {
+interface SpecializationSectionProps {
+  t: TFunction<"home", undefined, "home">;
+}
+
+export const SpecializationSection: FC<SpecializationSectionProps> = ({
+  t,
+}) => {
   return (
     <StyledSpecializationSection id="what-i-do">
       <h2 className="font-medium text-xl md:text-2xl text-center text-primary">
-        WHAT I DO
+        {t("specializationSection.title")}
       </h2>
       <h3 className="font-medium text-2xl md:text-3xl text-center text-secondary">
-        Specializing In
+        {t("specializationSection.subtitle")}
       </h3>
       <div className="w-full flex flex-wrap gap-4 justify-center">
         <ArticleCard
           image={javascriptLogo}
           title="JavaScript"
-          body="Strong JavaScript skills with in-depth knowledge of the event loop, enabling efficient asynchronous programming and optimized performance."
+          body={t("specializationSection.javascript")}
           primaryColorGradient="#11009E"
           secondaryColorGradient="#C4B0FF"
         />
         <ArticleCard
           image={typescriptLogo}
           title="TypeScript"
-          body="Strong TypeScript skills, leveraging static typing to enhance frontend development with improved code quality, maintainability, and early error detection."
+          body={t("specializationSection.typescript")}
           primaryColorGradient="#EA8FEA"
           secondaryColorGradient="#E5D1FA"
         />
         <ArticleCard
           image={reactLogo}
           title="React.js"
-          body="Skilled in React, building single-page web apps, creating reusable components, and translating designs into quality code."
+          body={t("specializationSection.react")}
           primaryColorGradient="#362FD9"
           secondaryColorGradient="#3C84AB"
         />
         <ArticleCard
           image={tailwindLogo}
           title="Tailwind"
-          body="Proficient in Tailwind, utilizing its utility-first approach to efficiently design and style responsive web applications."
+          body={t("specializationSection.tailwind")}
           primaryColorGradient="#FFB100"
           secondaryColorGradient="#F0ECCF"
         />
         <ArticleCard
           image={muiLogo}
           title="Material UI"
-          body="Strong expertise in Material UI, adept at customizing components and implementing best practices for polished and responsive user interfaces."
+          body={t("specializationSection.mui")}
           primaryColorGradient="#F49D1A"
           secondaryColorGradient="#FFE15D"
         />
         <ArticleCard
           image={reactNativeLogo}
           title="React Native"
-          body="Some experience in React Native, actively learning, applying and expanding my mobile app development skills."
+          body={t("specializationSection.reactNative")}
           primaryColorGradient="#3B185F"
           secondaryColorGradient="#C060A1"
         />

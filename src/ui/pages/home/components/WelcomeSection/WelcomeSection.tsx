@@ -14,15 +14,18 @@ import homeAvatar from "../../../../assets/images/homeAvatar.png";
 import homeLeftPolygon from "../../../../assets/images/homeLeftPolygon.svg";
 import homeRightPolygon from "../../../../assets/images/homeRightPolygon.svg";
 import homeEllipse from "../../../../assets/images/homeEllipse.svg";
+import { TFunction } from "i18next";
 
 interface WelcomeSectionProps {
   onGetCV: () => void;
   handleNavigateToSection: (sectionUrl: string) => void;
+  t: TFunction<"home", undefined, "home">;
 }
 
 export const WelcomeSection: FC<WelcomeSectionProps> = ({
   onGetCV,
   handleNavigateToSection,
+  t,
 }) => {
   return (
     <StyledWelcomeSection id="/">
@@ -30,10 +33,10 @@ export const WelcomeSection: FC<WelcomeSectionProps> = ({
       <SmallEllipseWatermark className="absolute bottom-0 right-0" />
       <StyledWelcomeArticle>
         <h1 className="text-white font-medium text-xl md:text-2xl">
-          HELLO, I'M JAVIER GAMBOA
+          {t("welcomeSection.title")}
         </h1>
         <h3 className="text-white font-bold text-3xl md:text-4xl">
-          FRONTEND DEVELOPER
+          {t("welcomeSection.subtitle")}
         </h3>
         <hr className="w-28 h-1 bg-white mb-4" />
         <div className="flex gap-4">
@@ -41,9 +44,9 @@ export const WelcomeSection: FC<WelcomeSectionProps> = ({
             color="primary"
             onClick={() => handleNavigateToSection("#contact")}
           >
-            Hire me
+            {t("welcomeSection.buttonHireMe")}
           </Button>
-          <Button onClick={onGetCV}>Get CV</Button>
+          <Button onClick={onGetCV}> {t("welcomeSection.buttonCV")}</Button>
         </div>
       </StyledWelcomeArticle>
       <StyledHomeAvatarContainer>
