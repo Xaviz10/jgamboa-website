@@ -23,7 +23,7 @@ export const ArticleCard = ({
       >
         <img className="w-16 h-16" src={image}></img>
       </StyledImageContainer>
-      <h3>{title}</h3>
+      <h3 className="font-bold pb-2">{title}</h3>
       <p>{body}</p>
     </StyledArticleCard>
   );

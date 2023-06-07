@@ -18,7 +18,6 @@ export function contactFormDataService(): ContactFormRepository {
             ...contactFormData,
           },
         });
-        console.log(data);
         if (success) {
           success();
         }

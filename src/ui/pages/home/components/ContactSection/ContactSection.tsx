@@ -23,6 +23,7 @@ import {
   FieldValues,
   UseFormHandleSubmit,
 } from "react-hook-form";
+import { TFunction } from "i18next";
 
 interface ContactSectionProps {
   handleContactForm: () => {
@@ -31,28 +32,29 @@ interface ContactSectionProps {
     control: Control<FieldValues, any>;
     errors: FieldErrors<FieldValues>;
   };
+  t: TFunction<"home", undefined, "home">;
 }
 
 export const ContactSection: FC<ContactSectionProps> = ({
   handleContactForm,
+  t,
 }) => {
   const { onSubmit, handleSubmit, control, errors } = handleContactForm();
   return (
     <StyledContactSection id="contact">
       <h2 className="font-medium text-xl md:text-2xl text-center text-primary">
-        CONTACT ME
+        {t("contactSection.title")}
       </h2>
       <h3 className="font-medium text-2xl md:text-3xl text-center text-secondary">
-        Get In Touch
+        {t("contactSection.subtitle")}
       </h3>
       <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 ">
         <StyledContactInformation>
           <h4 className="font-medium text-xl lg:text-2xl">
-            Contact Information
+            {t("contactSection.contactInformation")}
           </h4>
           <p className="font-medium text-lg">
-            Have some project? or maybe just want to say hello? I'd love to hear
-            from you
+            {t("contactSection.contactDetails")}
           </p>
           <ul className="flex flex-col gap-4 font-semibold text-lg z-[2]">
             <li className="py-4 flex gap-4 items-center">
@@ -95,8 +97,8 @@ export const ContactSection: FC<ContactSectionProps> = ({
           <TextFieldControlled
             id="name"
             name="name"
-            label="Name"
-            placeholder="Your name"
+            label={`${t("contactSection.nameLabel")}`}
+            placeholder={`${t("contactSection.namePlaceholder")}`}
             control={control}
             error={!!errors.name}
             helperText={errors.name?.message}
@@ -104,8 +106,8 @@ export const ContactSection: FC<ContactSectionProps> = ({
           <TextFieldControlled
             id="email"
             name="email"
-            label="Email"
-            placeholder="Your email"
+            label={`${t("contactSection.emailLabel")}`}
+            placeholder={`${t("contactSection.emailPlaceholder")}`}
             control={control}
             error={!!errors.email}
             helperText={errors.email?.message}
@@ -113,15 +115,15 @@ export const ContactSection: FC<ContactSectionProps> = ({
           <TextAreaControlled
             id="message"
             name="message"
-            label="Message"
-            placeholder="Your message"
+            label={`${t("contactSection.messageLabel")}`}
+            placeholder={`${t("contactSection.messagePlaceholder")}`}
             maxLength={160}
             control={control}
             error={!!errors.message}
             helperText={errors.message?.message}
           />
           <Button color="secondary" onClick={handleSubmit(onSubmit)}>
-            Send Message
+            {t("contactSection.buttonSend")}
           </Button>
         </StyledContactForm>
       </div>

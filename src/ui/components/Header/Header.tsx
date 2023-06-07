@@ -4,7 +4,7 @@ import { JGamboaLogo } from "../../assets/Svg";
 import { useHeader } from "./useHeader";
 
 export const Header: FC = () => {
-  const { viewHightPercentage } = useHeader();
+  const { viewHightPercentage, t } = useHeader();
   return (
     <StyledDefaultHeader
       className={`${
@@ -24,7 +24,7 @@ export const Header: FC = () => {
           }`}
           href="#about"
         >
-          About
+          {t("about")}
         </a>
         <a
           className={`${
@@ -32,7 +32,7 @@ export const Header: FC = () => {
           }`}
           href="#what-i-do"
         >
-          What I do
+          {t("whatIDo")}
         </a>
         {/* <a
           className={`${
@@ -40,7 +40,7 @@ export const Header: FC = () => {
           }`}
           href="#work"
         >
-          Work
+          {t("work")}
         </a> */}
         <a
           className={`${
@@ -48,7 +48,7 @@ export const Header: FC = () => {
           }`}
           href="#contact"
         >
-          Contact
+          {t("contact")}
         </a>
       </StyledNavBar>
     </StyledDefaultHeader>

@@ -1,5 +1,5 @@
 import { FC, PropsWithChildren } from "react";
-import { Header, Footer, Drawer } from "../../components";
+import { Header, Footer, Drawer, ToggleLanguage } from "../../components";
 import { StyledDefaultLayout } from "./DefaultLayout.styles";
 
 export const DefaultLayout: FC<PropsWithChildren> = ({ children }) => {
@@ -8,6 +8,7 @@ export const DefaultLayout: FC<PropsWithChildren> = ({ children }) => {
       <Header />
       <main>{children}</main>
       <Footer />
+      <ToggleLanguage />
     </StyledDefaultLayout>
   );
 };

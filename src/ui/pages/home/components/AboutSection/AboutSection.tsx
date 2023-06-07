@@ -4,11 +4,14 @@ import {
   StyledImagesContainer,
 } from "./AboutSection.styles";
 import { CoffeeIcon, TravelIcon, WorkoutIcon } from "../../../../assets/Svg";
-import { Button } from "../../../../components";
 import aboutAvatar from "../../../../assets/images/aboutAvatar.png";
 import skills from "../../../../assets/images/skills.svg";
+import { TFunction } from "i18next";
 
-export const AboutSection: FC = () => {
+interface AboutSectionProps {
+  t: TFunction<"home", undefined, "home">;
+}
+export const AboutSection: FC<AboutSectionProps> = ({ t }) => {
   return (
     <StyledAboutSection id="about">
       <StyledImagesContainer>
@@ -17,34 +20,29 @@ export const AboutSection: FC = () => {
       </StyledImagesContainer>
       <article className="w-full mx-auto flex flex-col gap-2 justify-center items-center md:items-start max-w-lg">
         <h2 className="text-primary font-medium text-xl md:text-2xl">
-          ABOUT ME
+          {t("aboutMeSection.title")}
         </h2>
         <h3 className="text-secondary font-semibold text-2xl md:text-3xl">
-          Frontend Developer
+          {t("aboutMeSection.subtitle")}
         </h3>
         <p className="text-tertiary font-normal text-base md:text-lg text-justify">
-          I am a proactive Frontend Developer with a background in Mechatronics
-          Engineering and a Master's degree in Industrial Automation
-          Engineering. Over the past 3 years, I have acquired skills in web
-          development, with a strong focus on React. I am passionate about
-          creating efficient and intuitive user interfaces and constantly
-          seeking new challenges to grow both professionally and personally.
+          {t("aboutMeSection.description")}
         </p>
         <h3 className="pt-4 text-secondary font-semibold text-xl md:text-2xl">
-          My hobbies
+          {t("aboutMeSection.myHobbies")}
         </h3>
         <ul className="flex flex-wrap gap-6">
           <li className="flex gap-2 items-center">
             <TravelIcon />
-            Travel
+            {t("aboutMeSection.travel")}
           </li>
           <li className="flex gap-2 items-center">
             <WorkoutIcon />
-            Workout
+            {t("aboutMeSection.workout")}
           </li>
           <li className="flex gap-2 items-center">
             <CoffeeIcon />
-            Coffee
+            {t("aboutMeSection.coffee")}
           </li>
         </ul>
       </article>
