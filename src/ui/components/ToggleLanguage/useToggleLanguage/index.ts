@@ -5,7 +5,8 @@ import { actSetLanguage } from "../../../../data/dto/actions";
 import { languageSelector } from "../../../../data/dto/selectors";
 
 export function useToggleLanguage() {
-  const { i18n } = useTranslation();
+  const { i18n: i18nHeader } = useTranslation("header");
+  const { i18n: i18nHome } = useTranslation("home");
   const dispatch = useDispatch();
   const { language: savedLanguage } = useSelector(languageSelector);
 
@@ -18,7 +19,8 @@ export function useToggleLanguage() {
   };
 
   useEffect(() => {
-    i18n.changeLanguage(language);
+    i18nHeader.changeLanguage(language);
+    i18nHome.changeLanguage(language);
     dispatch(
       actSetLanguage({
         language: language,
