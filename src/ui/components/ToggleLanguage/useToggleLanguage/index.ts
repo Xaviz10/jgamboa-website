@@ -28,5 +28,10 @@ export function useToggleLanguage() {
     );
   }, [language]);
 
+  useEffect(() => {
+    i18nHeader.changeLanguage(language);
+    i18nHome.changeLanguage(language);
+  }, []);
+
   return { language, handleLanguageChange };
 }
