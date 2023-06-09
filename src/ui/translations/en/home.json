@@ -1,4 +1,11 @@
 {
+  "header": {
+    "about": "About",
+    "whatIDo": "What I Do",
+    "work": "Work",
+    "contact": "Contact"
+  },
+
   "welcomeSection": {
     "title": "HELLO, I'M JAVIER GAMBOA",
     "subtitle": "FRONTEND DEVELOPER",

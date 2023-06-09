@@ -24,7 +24,7 @@ export const Header: FC = () => {
           }`}
           href="#about"
         >
-          {t("about")}
+          {t("header.about")}
         </a>
         <a
           className={`${
@@ -32,7 +32,7 @@ export const Header: FC = () => {
           }`}
           href="#what-i-do"
         >
-          {t("whatIDo")}
+          {t("header.whatIDo")}
         </a>
         {/* <a
           className={`${
@@ -40,7 +40,7 @@ export const Header: FC = () => {
           }`}
           href="#work"
         >
-          {t("work")}
+          {t("header.work")}
         </a> */}
         <a
           className={`${
@@ -48,7 +48,7 @@ export const Header: FC = () => {
           }`}
           href="#contact"
         >
-          {t("contact")}
+          {t("header.contact")}
         </a>
       </StyledNavBar>
     </StyledDefaultHeader>
