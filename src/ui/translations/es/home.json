@@ -1,4 +1,10 @@
 {
+  "header": {
+    "about": "Sobre mí",
+    "whatIDo": "Habilidades",
+    "work": "Trabajo",
+    "contact": "Contáctame"
+  },
   "welcomeSection": {
     "title": "HOLA, SOY JAVIER GAMBOA",
     "subtitle": "DESARROLLADOR FRONTEND",

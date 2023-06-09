@@ -30,8 +30,6 @@ const handleRequestError = (error: any) => {
 
 // axios.interceptors.request.use(handleRequestSuccess, handleRequestError);
 
-import headerEn from "./ui/translations/en/header.json";
-import headerEs from "./ui/translations/es/header.json";
 import homeEn from "./ui/translations/en/home.json";
 import homeEs from "./ui/translations/es/home.json";
 import { I18nextProvider } from "react-i18next";
@@ -42,11 +40,9 @@ i18next.init({
   lng: "en",
   resources: {
     es: {
-      header: headerEs,
       home: homeEs,
     },
     en: {
-      header: headerEn,
       home: homeEn,
     },
   },

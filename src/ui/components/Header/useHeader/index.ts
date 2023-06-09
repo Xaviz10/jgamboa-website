@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export function useHeader() {
-  const [t] = useTranslation("header");
+  const [t] = useTranslation("home");
 
   const [scrollOffset, setScrollOffset] = useState(0);
   const [screenHeight, setScreenHeight] = useState(window.innerHeight);
