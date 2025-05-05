@@ -7,29 +7,29 @@
   },
   "welcomeSection": {
     "title": "HOLA, SOY JAVIER GAMBOA",
-    "subtitle": "DESARROLLADOR FRONTEND",
+    "subtitle": "DESARROLLADOR DE SOFTWARE",
     "buttonHireMe": "Contratar",
     "buttonCV": "Ver HV"
   },
   "aboutMeSection": {
     "title": "SOBRE MÍ",
-    "subtitle": "Desarrollador Frontend",
-    "description": "Soy un Desarrollador Frontend proactivo con experiencia en Ingeniería Mecatrónica y una maestría en Ingeniería de Automatización Industrial. En los últimos 3 años, he adquirido habilidades en el desarrollo web, con un fuerte enfoque en React. Me apasiona crear interfaces de usuario eficientes e intuitivas y buscar constantemente nuevos desafíos para crecer tanto profesional como personalmente.",
+    "subtitle": "Desarrollador de Software",
+    "description": "Soy un desarrollador de software proactivo con sólida experiencia en la construcción de aplicaciones escalables utilizando servicios de AWS como Lambda, API Gateway, DynamoDB, Cognito y SQS. También me especializo en desarrollo frontend y móvil con tecnologías modernas como React, React Native y Angular. Me apasiona crear soluciones eficientes e intuitivas y siempre estoy en busca de nuevos retos para crecer profesional y personalmente.",
     "myHobbies": "Mis hobbies",
     "travel": "Viajar",
     "workout": "Ejercitarme",
     "coffee": "Café"
   },
   "specializationSection": {
-    "title": "QUE HAGO",
-    "subtitle": "Me Especializo En",
-    "javascript": "Fuertes habilidades de JavaScript con conocimiento profundo del bucle de eventos, permitiendo una programación asíncrona eficiente y un rendimiento optimizado.",
-    "typescript": "Fuertes habilidades con TypeScript, aprovechando la tipificación estática para mejorar el desarrollo de frontend mejorando la calidad de código, mantenibilidad y detección de errores tempranos.",
-    "react": "Fuerte conocimiento en React para construir aplicaciones web SPA, crear componentes reutilizables y traducir diseños en código de calidad.",
-    "tailwind": "Competente en Tailwind, utilizando su enfoque de clases predefinidas para diseñar aplicaciones web receptivas y eficientemente",
-    "mui": "Fuerte experiencia con Material UI, experto en personalizar sus componentes, implementando las mejores prácticas, para obtener interfaces de usuario pulidas y receptivas.",
-    "reactNative": "Experiencia en React Native, aprendiendo activamente, aplicando y expandiendo mis habilidades de desarrollo de aplicaciones móviles."
-  },
+  "title": "LO QUE HAGO",
+  "subtitle": "Especializado en",
+  "serverlessDevelopment": "Experiencia en la creación de aplicaciones escalables y basadas en eventos utilizando AWS Lambda, API Gateway, SQS y otros servicios.",
+  "cloudInfrastructure": "Dominio de AWS CDK e infraestructura como código (IaC), creando entornos en la nube reproducibles y fáciles de mantener.",
+  "authentication": "Implementación de flujos de autenticación seguros y escalables con Amazon Cognito y buenas prácticas con OAuth2 y JWT.",
+  "databaseManagement": "Diseño y gestión de modelos de datos eficientes utilizando Amazon DynamoDB (NoSQL) y RDS (MySQL) para sistemas transaccionales.",
+  "messagingAndNotifications": "Integración de comunicación asíncrona y notificaciones mediante Amazon SQS, SNS, SES, Pinpoint y Connect para soportar sistemas distribuidos y estrategias de comunicación multicanal.",
+  "frontendFrameworks": "Experto en frameworks frontend modernos como React, React Native y Angular, desarrollando aplicaciones web y móviles con arquitectura limpia e integración fluida con APIs."
+},
   "contactSection": {
     "title": "CONTÁCTAME",
     "subtitle": "Ponte en contacto",

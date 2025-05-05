@@ -12,6 +12,7 @@ import {
   SmallEllipseWatermarkContact,
   UserIcon,
 } from "../../../../assets/Svg";
+import awsCloudPractitionerLogo from "../../../../assets/images/awsCloudPractitionerLogo.png";
 import {
   Button,
   TextAreaControlled,
@@ -70,26 +71,40 @@ export const ContactSection: FC<ContactSectionProps> = ({
               </a>
             </li>
           </ul>
-          <ul className="flex gap-8 mt-auto z-[2]">
+          
+            <ul className="flex gap-8 mt-auto z-[2]">
             <li>
               <a
-                className="w-16 h-16 rounded-full grid place-content-center hover:bg-primary hover:cursor-pointer"
-                target="blank__"
-                href="https://www.linkedin.com/in/javiergamboaduarte/"
+              className="w-16 h-16 rounded-full grid place-content-center hover:bg-primary hover:cursor-pointer"
+              target="blank__"
+              href="https://www.linkedin.com/in/javiergamboaduarte/"
               >
-                <LinkedInIcon />
+              <LinkedInIcon />
               </a>
             </li>
             <li>
               <a
-                className="w-16 h-16 rounded-full grid place-content-center hover:bg-primary hover:cursor-pointer"
-                target="blank__"
-                href="https://github.com/Xaviz10"
+              className="w-16 h-16 rounded-full grid place-content-center hover:bg-primary hover:cursor-pointer"
+              target="blank__"
+              href="https://github.com/Xaviz10"
               >
-                <GithubIcon />
+              <GithubIcon />
               </a>
             </li>
-          </ul>
+            <li className="ml-auto">
+              <a
+              href="https://www.credly.com/badges/7a69003c-1336-4fb2-8095-6af9c3d17833/public_url"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              <img
+                src={awsCloudPractitionerLogo}
+                alt="AWS Cloud Practitioner Logo"
+                className="w-32 h-32"
+              />
+              </a>
+            </li>
+            </ul>
           <BigEllipseWatermarkContact className="absolute left-0" />
           <SmallEllipseWatermarkContact className="absolute right-1/4 top-1/3" />
         </StyledContactInformation>
