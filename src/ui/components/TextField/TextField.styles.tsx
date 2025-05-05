@@ -20,6 +20,7 @@ export const StyledInput = styled.input.attrs({
       border-b-2
       border-gray-300
       outline-none
+      bg-transparent
 
 
       text-lg

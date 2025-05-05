@@ -8,29 +8,29 @@
 
   "welcomeSection": {
     "title": "HELLO, I'M JAVIER GAMBOA",
-    "subtitle": "FRONTEND DEVELOPER",
+    "subtitle": "SOFTWARE DEVELOPER",
     "buttonHireMe": "Hire me",
     "buttonCV": "Get CV"
   },
   "aboutMeSection": {
     "title": "ABOUT ME",
-    "subtitle": "Frontend Developer",
-    "description": "I am a proactive Frontend Developer with a background in Mechatronics Engineering and a Master's degree in Industrial Automation Engineering. Over the past 3 years, I have acquired skills in web development, with a strong focus on React. I am passionate about creating efficient and intuitive user interfaces and constantly seeking new challenges to grow both professionally and personally.",
+    "subtitle": "Software Developer",
+    "description": "I am a proactive software developer with strong experience building scalable applications using AWS services such as Lambda, API Gateway, DynamoDB, Cognito, and SQS. I also specialize in modern frontend and mobile development using React, React Native, and Angular. I am passionate about creating efficient, intuitive solutions and constantly seek new challenges to grow both professionally and personally.",
     "myHobbies": "My Hobbies",
     "travel": "Travel",
     "workout": "Workout",
     "coffee": "Coffee"
   },
-  "specializationSection": {
-    "title": "WHAT I DO",
-    "subtitle": "Specializing In",
-    "javascript": "Strong JavaScript skills with in-depth knowledge of the event loop, enabling efficient asynchronous programming and optimized performance.",
-    "typescript": "Strong TypeScript skills, leveraging static typing to enhance frontend development with improved code quality, maintainability, and early error detection.",
-    "react": "Skilled in React, building single-page web apps, creating reusable components, and translating designs into quality code",
-    "tailwind": "Proficient in Tailwind, utilizing its utility-first approach to efficiently design and style responsive web applications.",
-    "mui": "Strong expertise in Material UI, adept at customizing components and implementing best practices for polished and responsive user interfaces.",
-    "reactNative": "Experience in React Native, actively learning, applying and expanding my mobile app development skills."
-  },
+"specializationSection": {
+  "title": "WHAT I DO",
+  "subtitle": "Specializing In",
+  "serverlessDevelopment": "Experienced in building scalable, event-driven applications using AWS Lambda, API Gateway, SQS such as other services.",
+  "cloudInfrastructure": "Skilled in AWS CDK and infrastructure as code (IaC), creating reproducible and maintainable cloud environments.",
+  "authentication": "Implementing secure and scalable authentication flows using Amazon Cognito and best practices with OAuth2 and JWT.",
+  "databaseManagement": "Designing and maintaining efficient data models using Amazon DynamoDB (NoSQL) and RDS (MySQL) for transactional systems.",
+  "messagingAndNotifications": "Integrating asynchronous communication and alerts using Amazon SQS, SNS, SES, Pinpoint, and Connect to support distributed systems and multichannel engagement strategies.",
+  "frontendFrameworks": "Proficient in modern frontend frameworks like React, React Native, and Angular—developing responsive web and mobile applications with clean architecture and seamless API integration."
+},
   "contactSection": {
     "title": "CONTACT ME",
     "subtitle": "Get In Touch",
