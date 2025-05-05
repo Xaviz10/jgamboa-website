@@ -48,7 +48,7 @@ jobs:
 
       # Explicitly use the correct version of upload-pages-artifact
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist repository
           path: "./dist"
